@@ -1,5 +1,4 @@
 // Arquivo principal do aplicativo Amparo Coletivo
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart' as provider;
 import 'package:amparo_coletivo/presentation/pages/main_navigation.dart';
@@ -7,6 +6,8 @@ import 'config/theme_config.dart';
 import 'config/theme_notifier.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:provider/provider.dart';
+
+// import 'package:provider/provider.dart'; Importação duplicada removida
 
 // Importando as páginas
 import 'package:amparo_coletivo/presentation/pages/auth/register_page.dart';
@@ -61,9 +62,7 @@ class App extends StatelessWidget {
                 'title': 'Amparo Coletivo',
                 'description':
                     'O Amparo Coletivo é uma plataforma dedicada a conectar ONGs e pessoas que desejam ajudar. Nosso objetivo é facilitar o acesso a informações sobre ONGs, promovendo a transparência e a solidariedade.',
-                'imageUrl':
-                    // TODO: Substituir pela URL real da imagem da ONG
-                    'https://picsum.photos/200/300',
+                'imageUrl': 'https://picsum.photos/200/300',
                 'contactEmail': 'AmparoColetivo.suporte@gmail.com'
               },
             ),
