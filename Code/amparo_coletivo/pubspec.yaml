@@ -10,6 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  file_picker: ^8.0.0
 
   # Estado, injeção de dependência e gerenciamento de tema
   provider: ^6.1.1
@@ -27,11 +28,15 @@ dependencies:
 
   # Logs
   logger: ^2.0.2
-
+  
   # Pacotes para geração e manipulação de QR Code
-  qr_flutter: ^4.1.0 # Geração de QR Code visual
-  image: ^4.1.3 # Manipulação de imagem para salvar como PNG
-  path_provider: ^2.1.1 # Para pegar diretórios temporários, etc.
+  qr_flutter: ^4.1.0
+  image: ^4.1.3
+  path_provider: ^2.1.1
+  image_picker: ^1.2.0
+
+  # Gerador de IDs únicos
+  uuid: ^4.5.0
 
 dev_dependencies:
   flutter_test:
@@ -43,6 +48,3 @@ flutter:
 
   assets:
     - assets/images/
-
-  # fonts:
-  #   (Você pode ativar essas fontes se estiver usando)
